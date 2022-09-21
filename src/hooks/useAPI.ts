@@ -1,4 +1,4 @@
-import { HASURA_ADMIN_SECRET, HASURA_POSTGRES_DB_ENDPOINT } from "../constants";
+import { HASURA_POSTGRES_DB_ENDPOINT } from "../constants";
 
 /**
  * @function persistTransactions persists provided list of transactions to database
@@ -22,7 +22,7 @@ export const persistTransactions = async (transactions: []) => {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
-      "x-hasura-admin-secret": HASURA_ADMIN_SECRET,
+      "x-hasura-admin-secret": process.env.HASURA_ADMIN_SECRET || "",
     },
     body: JSON.stringify({
       query: queryString,
