@@ -4,8 +4,6 @@ type ToastProp = {
   message: string;
 };
 
-// random comment
-
 const Toast = ({ message }: ToastProp) => {
   return message.length ? (
     <div className="absolute top-36 right-25 z-50 w-1/3 h-12 bg-black justify-center  items-center flex rounded-lg opacity-80">
