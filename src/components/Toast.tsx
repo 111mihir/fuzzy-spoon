@@ -1,5 +1,4 @@
 // accepts a message and displays it in a toast
-// test
 
 type ToastProp = {
   message: string;
