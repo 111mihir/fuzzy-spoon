@@ -14,6 +14,7 @@ services:
     restart: always
     environment:
       ## postgres database to store Hasura metadata
+      ## test comments for git
       HASURA_GRAPHQL_METADATA_DATABASE_URL: postgres://postgres:postgrespassword@postgres:5432/postgres
       ## this env var can be used to add the above postgres database to Hasura as a data source. this can be removed/updated based on your needs
       PG_DATABASE_URL: postgres://postgres:postgrespassword@postgres:5432/postgres
@@ -48,4 +49,3 @@ services:
       start_period: 5s
 volumes:
   db_data:
-

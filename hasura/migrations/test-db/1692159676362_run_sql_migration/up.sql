@@ -6,3 +6,5 @@ CREATE TABLE users (
 
 INSERT INTO users (name, email) VALUES ('John', 'john.doe@hasura.io');
 INSERT INTO users (name, email) VALUES ('Jane', 'jane.doe@hasura.io');
+
+-- comment for up.sql
