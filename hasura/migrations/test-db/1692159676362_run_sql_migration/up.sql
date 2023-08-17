@@ -6,3 +6,5 @@ CREATE TABLE users (
 
 INSERT INTO users (name, email) VALUES ('John', 'john.doe@hasura.io');
 INSERT INTO users (name, email) VALUES ('Jane', 'jane.doe@hasura.io');
+
+-- Path: hasura/migrations/test-db/1692159676362_run_sql_migration/down.sql

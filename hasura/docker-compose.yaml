@@ -48,3 +48,5 @@ services:
       start_period: 5s
 volumes:
   db_data:
+
+## To use Hasura GraphQL Engine Plus (https://hasura.io/docs/latest/graphql/core/hasura-plus/index.html)
